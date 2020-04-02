@@ -7,7 +7,7 @@ total_tentativas = 3
 rodada = 1
 
 while(rodada <= total_tentativas):
-    print('tentativa', rodada, 'de', total_tentativas)
+    print('tentativa {} de {}'.format(rodada,total_tentativas))
     chute_str = input('Digite o seu número: ')
     print("Você digitou", chute_str)
 
