@@ -5,9 +5,9 @@ print("********************************")
 numero_secreto = 42
 total_tentativas = 3
 rodada = 1
-
+#enquanto ainda há tentativas:
 while(rodada <= total_tentativas):
-    print('tentativa', rodada, 'de', total_tentativas)
+    print('tentativa {} de {}'.format(rodada,total_tentativas))
     chute_str = input('Digite o seu número: ')
     print("Você digitou", chute_str)
 
@@ -18,6 +18,7 @@ while(rodada <= total_tentativas):
 #if(numero_secreto == chute):
     if(acertou):
         print('Você acertou')
+        break
     else:
         if(maior):
             print("Você errou! O seu chute foi maior do que o número secreto")
