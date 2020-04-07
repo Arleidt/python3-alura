@@ -1,9 +1,25 @@
+import random
+
 print("********************************")
 print('Bem Vindo ao Jogo de Adivinhação')
 print("********************************")
 
-numero_secreto = 42
-total_tentativas = 3
+#aleatorio = random.randrange(10) 0 a 9
+#numero_secreto = round(random.random()*100) aleatorio multiplicado por 100, gerado é entre 0.0 e 1.0
+numero_secreto = random.randrange(1, 101)#inteiro valor primeiro parametro ate valor segundo paramentro menos 1
+total_tentativas = 0
+#print(numero_secreto)
+print('Qual o nível de dificuldade?')
+print('(1) Fácil (2) Médio (3)Difícil')
+nivel = int(input('Defina o nível: '))
+
+if (nivel == 1):
+    total_tentativas = 20
+elif (nivel == 2):
+    total_tentativas = 10
+else:
+    total_tentativas= 5
+
 #para variável em série de valores:
 #  faça algo
 for rodada in range(1, total_tentativas +1):
